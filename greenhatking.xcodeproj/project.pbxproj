@@ -17,6 +17,7 @@
 		56CA479924104C1500430C67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CA479824104C1500430C67 /* main.m */; };
 		56CA47A324104C1600430C67 /* greenhatkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CA47A224104C1600430C67 /* greenhatkingTests.m */; };
 		56CA47AE24104C1600430C67 /* greenhatkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CA47AD24104C1600430C67 /* greenhatkingUITests.m */; };
+		56CA47BD24104C1F00430C67 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CA47BC24104C1F00430C67 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		56CA47A924104C1600430C67 /* greenhatkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greenhatkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CA47AD24104C1600430C67 /* greenhatkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = greenhatkingUITests.m; sourceTree = "<group>"; };
 		56CA47AF24104C1600430C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56CA47BC24104C1F00430C67 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CA47BD24104C1F00430C67 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,7 @@
 				56CA47A124104C1600430C67 /* greenhatkingTests */,
 				56CA47AC24104C1600430C67 /* greenhatkingUITests */,
 				56CA478124104C1400430C67 /* Products */,
+				56CA47BB24104C1F00430C67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +142,14 @@
 				56CA47AF24104C1600430C67 /* Info.plist */,
 			);
 			path = greenhatkingUITests;
+			sourceTree = "<group>";
+		};
+		56CA47BB24104C1F00430C67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56CA47BC24104C1F00430C67 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
