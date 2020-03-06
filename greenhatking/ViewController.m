@@ -14,6 +14,8 @@
 UIImagePickerController * _imagePickerController;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView1;
+- (IBAction)imagedispose:(id)sender;
 
 @end
 
@@ -26,12 +28,14 @@ UIImagePickerController * _imagePickerController;
     [btn addTarget:self action:@selector(gotoPhoto) forControlEvents:UIControlEventTouchUpInside];//button触发任意事件,可以是自己写的,也可以是拉取控件系统生成的,这里触发的是gotophoto,
     [self.view addSubview:btn];
 
+
     // Do any additional setup after loading the view.
 }
 -(void)gotoPhoto
 {
 NSLog(@"photo");
-self.imageView.backgroundColor = [UIColor greenColor];
+
+self.imageView.backgroundColor = [UIColor whiteColor];
 [self setupImagePickerController];//触发这个函数
 }
 //创建对象
@@ -68,6 +72,7 @@ if([mediaType isEqualToString:requiredMediaType])
 {
 UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
 self.imageView.image = image;
+    //这里应该就是把图片显示到UIimageview上
 }
 [picker dismissViewControllerAnimated:YES completion:nil];
 }
@@ -83,4 +88,7 @@ self.imageView.image = image;
 }
 
 
+- (IBAction)imagedispose:(id)sender {
+     //self.imageView1.image = ;
+}
 @end
