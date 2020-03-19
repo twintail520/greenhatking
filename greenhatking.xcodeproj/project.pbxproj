@@ -13,11 +13,15 @@
 		56CA478E24104C1400430C67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CA478C24104C1400430C67 /* Main.storyboard */; };
 		56CA479124104C1500430C67 /* greenhatking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56CA478F24104C1500430C67 /* greenhatking.xcdatamodeld */; };
 		56CA479324104C1500430C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CA479224104C1500430C67 /* Assets.xcassets */; };
-		56CA479624104C1500430C67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CA479424104C1500430C67 /* LaunchScreen.storyboard */; };
 		56CA479924104C1500430C67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CA479824104C1500430C67 /* main.m */; };
 		56CA47A324104C1600430C67 /* greenhatkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CA47A224104C1600430C67 /* greenhatkingTests.m */; };
 		56CA47AE24104C1600430C67 /* greenhatkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CA47AD24104C1600430C67 /* greenhatkingUITests.m */; };
 		56CA47BD24104C1F00430C67 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CA47BC24104C1F00430C67 /* MobileCoreServices.framework */; };
+		56E720F12418FB3900C37B4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E720F02418FB3900C37B4F /* UIKit.framework */; };
+		56F0DB2C241CCC27004D483D /* filterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F0DB2B241CCC27004D483D /* filterViewController.m */; };
+		56F0DB2E241E6A76004D483D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F0DB2D241E6A76004D483D /* CoreImage.framework */; };
+		56F0DB8024236667004D483D /* SLBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F0DB7F24236667004D483D /* SLBlurView.m */; };
+		56F0DB832423697D004D483D /* faceDetectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F0DB822423697D004D483D /* faceDetectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +52,6 @@
 		56CA478D24104C1400430C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56CA479024104C1500430C67 /* greenhatking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = greenhatking.xcdatamodel; sourceTree = "<group>"; };
 		56CA479224104C1500430C67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		56CA479524104C1500430C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56CA479724104C1500430C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CA479824104C1500430C67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56CA479E24104C1600430C67 /* greenhatkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greenhatkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +61,14 @@
 		56CA47AD24104C1600430C67 /* greenhatkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = greenhatkingUITests.m; sourceTree = "<group>"; };
 		56CA47AF24104C1600430C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CA47BC24104C1F00430C67 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		56E720F02418FB3900C37B4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		56F0DB2A241CCC27004D483D /* filterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filterViewController.h; sourceTree = "<group>"; };
+		56F0DB2B241CCC27004D483D /* filterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = filterViewController.m; sourceTree = "<group>"; };
+		56F0DB2D241E6A76004D483D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		56F0DB7E24236667004D483D /* SLBlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLBlurView.h; sourceTree = "<group>"; };
+		56F0DB7F24236667004D483D /* SLBlurView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLBlurView.m; sourceTree = "<group>"; };
+		56F0DB812423697D004D483D /* faceDetectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = faceDetectViewController.h; sourceTree = "<group>"; };
+		56F0DB822423697D004D483D /* faceDetectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = faceDetectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F0DB2E241E6A76004D483D /* CoreImage.framework in Frameworks */,
 				56CA47BD24104C1F00430C67 /* MobileCoreServices.framework in Frameworks */,
+				56E720F12418FB3900C37B4F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,8 @@
 		56CA477724104C1400430C67 = {
 			isa = PBXGroup;
 			children = (
+				56F0DB7A242361A1004D483D /* facedetect */,
+				56F0DB20241C108F004D483D /* filter */,
 				56CA478224104C1400430C67 /* greenhatking */,
 				56CA47A124104C1600430C67 /* greenhatkingTests */,
 				56CA47AC24104C1600430C67 /* greenhatkingUITests */,
@@ -118,7 +133,6 @@
 				56CA478A24104C1400430C67 /* ViewController.m */,
 				56CA478C24104C1400430C67 /* Main.storyboard */,
 				56CA479224104C1500430C67 /* Assets.xcassets */,
-				56CA479424104C1500430C67 /* LaunchScreen.storyboard */,
 				56CA479724104C1500430C67 /* Info.plist */,
 				56CA479824104C1500430C67 /* main.m */,
 				56CA478F24104C1500430C67 /* greenhatking.xcdatamodeld */,
@@ -147,9 +161,31 @@
 		56CA47BB24104C1F00430C67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56F0DB2D241E6A76004D483D /* CoreImage.framework */,
+				56E720F02418FB3900C37B4F /* UIKit.framework */,
 				56CA47BC24104C1F00430C67 /* MobileCoreServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56F0DB20241C108F004D483D /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				56F0DB2A241CCC27004D483D /* filterViewController.h */,
+				56F0DB2B241CCC27004D483D /* filterViewController.m */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
+		56F0DB7A242361A1004D483D /* facedetect */ = {
+			isa = PBXGroup;
+			children = (
+				56F0DB7E24236667004D483D /* SLBlurView.h */,
+				56F0DB7F24236667004D483D /* SLBlurView.m */,
+				56F0DB812423697D004D483D /* faceDetectViewController.h */,
+				56F0DB822423697D004D483D /* faceDetectViewController.m */,
+			);
+			path = facedetect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CA479624104C1500430C67 /* LaunchScreen.storyboard in Resources */,
 				56CA479324104C1500430C67 /* Assets.xcassets in Resources */,
 				56CA478E24104C1400430C67 /* Main.storyboard in Resources */,
 			);
@@ -284,9 +319,12 @@
 			files = (
 				56CA479924104C1500430C67 /* main.m in Sources */,
 				56CA479124104C1500430C67 /* greenhatking.xcdatamodeld in Sources */,
+				56F0DB2C241CCC27004D483D /* filterViewController.m in Sources */,
 				56CA478B24104C1400430C67 /* ViewController.m in Sources */,
+				56F0DB832423697D004D483D /* faceDetectViewController.m in Sources */,
 				56CA478524104C1400430C67 /* AppDelegate.m in Sources */,
 				56CA478824104C1400430C67 /* SceneDelegate.m in Sources */,
+				56F0DB8024236667004D483D /* SLBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +366,6 @@
 				56CA478D24104C1400430C67 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		56CA479424104C1500430C67 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56CA479524104C1500430C67 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
