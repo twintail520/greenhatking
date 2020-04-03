@@ -8,6 +8,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "filterViewController.h"
 #import<CoreImage/CoreImage.h>
+
 @interface filterViewController ()
 <UINavigationControllerDelegate,UIImagePickerControllerDelegate>{
 UIImagePickerController *_imagePickerController;//系统照片选择控制器
