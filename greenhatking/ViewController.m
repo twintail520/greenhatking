@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "faceDetectViewController.h"
 #import "filterViewController.h"
+#import "GPUImage.h"
+#import "beautifyfilterViewController.h"
 @interface ViewController ()
 <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {
@@ -16,7 +18,7 @@ UIImagePickerController * _imagePickerController;//系统照片选择控制器
 
 
 }
-
+//@property (strong,nonatomic) UIActivityIndicatorView *activityIndicatorView;//打開美顏功能跳轉太慢所以加個等待控件
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView1;
 - (IBAction)imagedispose:(id)sender;
@@ -24,6 +26,7 @@ UIImagePickerController * _imagePickerController;//系统照片选择控制器
 - (IBAction)checkAllbum:(id)sender;
 - (IBAction)savephoto:(id)sender;
 - (IBAction)facedetect:(UIButton *)sender;
+- (IBAction)beautyface:(id)sender;
 
 @end
 
@@ -31,22 +34,18 @@ UIImagePickerController * _imagePickerController;//系统照片选择控制器
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- /*   UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(150, 680, 100, 50)];//(x,y,长,宽)
-    btn.backgroundColor = [UIColor greenColor];
-    [btn addTarget:self action:@selector(gotoPhoto) forControlEvents:UIControlEventTouchUpInside];//button触发任意事件,可以是自己写的,也可以是拉取控件系统生成的,这里触发的是gotophoto,*/
-//    [self.view addSubview:btn];
-
-
-    // Do any additional setup after loading the view.
+    /*
+    self.activityIndicatorView =[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];//獲得等待指示器
+    CGRect frame = self.activityIndicatorView.frame;
+    frame.origin = CGPointMake((screen.size.width - frame.size.width) / 2, 84);
+    //重新设置控件的位置
+    self.activityIndicatorView.frame = frame;
+    
+    self.activityIndicatorView.hidesWhenStopped = false;
+    [self.view addSubview:self.activityIndicatorView];
+    */
 }
-/*-(void)gotoPhoto
-{
-NSLog(@"photo");
 
-self.imageView.backgroundColor = [UIColor whiteColor];
-[self setupImagePickerController];//触发这个函数
-}*/
-//创建对象
 
 -(void)setupImagePickerController{
 //第一步:判断摄像头是否打开
@@ -130,7 +129,7 @@ NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Docume
 
 - (IBAction)imagedispose:(id)sender {
       
-}
+}//第一個頁面跳轉功能選擇頁面按鈕
 
 
     
@@ -142,7 +141,7 @@ NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Docume
 }
 
 #pragma mark - 从相册获取图片
-- (IBAction)checkAllbum:(id)sender {
+- (IBAction)checkAllbum:(id)sender {//待定方法裡的選取照片功能
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
             
             UIImagePickerController *pickerImage = [[UIImagePickerController alloc] init];
@@ -163,12 +162,20 @@ NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Docume
 }
 
 - (IBAction)savephoto:(id)sender {
-}
+}//待定的方法裡的保存圖片按鈕
 
-- (IBAction)facedetect:(UIButton *)sender {
+- (IBAction)facedetect:(UIButton *)sender {//進入人臉識別功能按鈕
     [self jumpToFunction];
 }
--(void)jumpToFunction{//模态视图跳转
+
+- (IBAction)beautyface:(id)sender {//美顏方法的界面模態視圖跳轉
+    beautifyfilterViewController *beautifyfiltercontroller = [[beautifyfilterViewController alloc]init];
+    beautifyfiltercontroller.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:beautifyfiltercontroller animated:YES completion:nil];
+    
+    
+}
+-(void)jumpToFunction{//人臉識別方法的界面 模态视图跳转
     faceDetectViewController * faceDetectController = [[faceDetectViewController alloc] init];
     faceDetectController.modalPresentationStyle = UIModalPresentationFullScreen;
     [ self presentViewController:faceDetectController animated: YES completion:nil];
